@@ -1,0 +1,4 @@
+raio = int(input('Digite o RAIO de um CIRCULO para saber a AREA do CIRCULO\n'))
+area = raio * 2
+
+print(f'A area do RAIO selecionado é de {area}cm,m etc...')
