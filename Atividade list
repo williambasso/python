@@ -1,0 +1,15 @@
+#ADD NUMEROS NA LISTA POR INPUT E DEPOIS RETIRA OS IMPARES
+lst = [] 
+  
+# Quantidade de elementos
+n = int(input("Enter number of elements : ")) 
+  
+# ele(elements) numeros para entrar na lista 
+for i in range(0, n): 
+    ele = int(input()) 
+  
+    lst.append(ele) # adding the element 
+for num in lst:
+    if num % 2 != 0:
+        lst.remove(num)
+print(lst) 
