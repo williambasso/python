@@ -1,0 +1,31 @@
+# Sistema de media de aluno
+lst = []
+
+#Função para pegar a quantidade de notas e a quantidade de valores e dividir para pegar a media
+def media():
+    quantidade = len(lst)
+    soma = sum(lst)
+    media = soma / quantidade
+    print(f'A media do aluno foi, \033[4;36m{media}\033[m')
+    if media >= 7:
+        print("\033[1;32mAluno Aprovado!\033[m")
+    elif media >=5 and media < 7:
+        print("\033[1;33mAluno em Recuperação\033[m")
+    else:
+        print("\033[1;31mAluno Reprovado!\033[m")
+
+   
+
+
+# Quantidade de vezes que será requisitado
+quantidade = int(input("Digite a quantidade de notas do(a) aluno(a): "))
+
+
+# ele(elements) numeros para entrar na lista
+for i in range(0, quantidade):
+    notas = int(input('Digite as notas: '))
+    lst.append(notas)  # adiciona as notas na lista!
+
+print(lst)
+
+media()
