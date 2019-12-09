@@ -1,0 +1,32 @@
+<!-- Include do PHP -->
+{% extends 'layout.html' %}
+{% block content  %}
+
+<h1>Usuários</h1>
+<p><a href="/cadastrar">Novo usuário</a></p>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>CPF</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for p in paranaue %}
+        <tr>
+            <td>{{p.id}}</td>
+            <td>{{p.nome}}</td>
+            <td>{{p.sobrenome}}</td>
+            <td>{{p.cpf}}</td>
+            <td><a href="/editar?id={{ p.id }}">Editar</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+
+{% endblock %}

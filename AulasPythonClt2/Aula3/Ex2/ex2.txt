@@ -1,0 +1,26 @@
+1 - Criar uma classe Pessoa
+        Id
+        Nome
+        Sobrenome
+        Cpf
+
+2 - Criar uma classe Cliente
+        Cadastrar(Pessoa)
+        Editar(id)
+        Listar()
+        BuscarPorId(id)
+        Deletar(id)
+
+3 - As operações de CRUD devem ser realizadas em arquivo texto
+4 - Web
+        Rota-Principal - Listagem
+        Rota-Cadastrar - CadastrarCliente
+        Rota-Editar - EditarCliente
+        Rota-Deletar - DeletarCliente
+5 - Terminal
+        Menu -
+        1 - Listagem
+        2 - CadastrarCliente
+        3 - EditarCliente
+        4 - DeletarCliente
+    
